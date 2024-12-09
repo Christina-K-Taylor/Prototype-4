@@ -1444,11 +1444,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1fa0e3d29c3c5742a72d4596e97ab3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 5
-  Shoot: 32
-  RotateLeft: 113
-  RotateRight: 101
-  cooldown: 0.7
+  velocity: 1000
+  shotVelocity: 1400
+  Rotspeed: 1000
+  Shoot: 323
+  cooldown: 0.5
   blast: {fileID: 6265358877868815288, guid: c70df3a3367ccf94185929131e7568b1, type: 3}
   blaster: {fileID: 1124681099}
 --- !u!212 &1124681094

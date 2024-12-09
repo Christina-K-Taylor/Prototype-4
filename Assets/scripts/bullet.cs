@@ -5,17 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class bullet : MonoBehaviour
 {
+    int count = 3;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject thingy = collision.gameObject;
         if (thingy.name == "Meteor")
         {
             thingy.GetComponent<meteor>().Split();
+            Destroy(this.gameObject);
         }
         if(GameObject.Find("Meteor") == null)
         {
             SceneManager.LoadScene("WinScene");
         }
-        Destroy(this.gameObject);
+        count -= 1;
+        if ( count == 0) {
+            Destroy(this.gameObject);
+        }
+        
     }
 }

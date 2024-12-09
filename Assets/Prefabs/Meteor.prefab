@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 8992663898502728896}
   blaster: {fileID: 4426971153030543256}
+  velocity: 30
 --- !u!61 &6292355197965527314
 BoxCollider2D:
   m_ObjectHideFlags: 0
